@@ -14,7 +14,8 @@ const ReadButton = ({ book }: IReadButtonProps) => {
     }
     const { readBooks, setReadBooks } = bookContext
     const handleReadBook = (book: Book) => {
-        setReadBooks([...readBooks, book])
+        const newBook = { ...book, selectedFor: "ReadBooks" }
+        setReadBooks([...readBooks, newBook])
         toast.success("Book Listed as Read")
     }
     const isAlreadyAdded = readBooks.some((b) => b.bookId === book.bookId)

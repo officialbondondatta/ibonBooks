@@ -10,4 +10,5 @@ export default interface Book {
     tags: string[];
     publisher: string;
     yearOfPublishing: number;
+    selectedFor?: string;
 }

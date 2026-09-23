@@ -71,7 +71,6 @@ const page = async ({ params }: IBookSingleProps) => {
                         </p>
                     </div>
                     <div className="flex gap-5">
-
                         <ReadButton book={book}></ReadButton>
                         <WishListButton book={book}></WishListButton>
                     </div>
