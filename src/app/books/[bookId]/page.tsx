@@ -20,8 +20,8 @@ const page = async ({ params }: IBookSingleProps) => {
 
     return (
         <section className="p-5 lg:p-0">
-            <div className="container mx-auto grid lg:grid-cols-2 grid-cols-1 bg-slate-200 max-w-300 p-5 rounded-xl mt-10">
-                <div className="w-full max-w-100 mx-auto flex items-center justify-center mb-5">
+            <div className="container mx-auto grid lg:grid-cols-2 grid-cols-1 bg-slate-200 max-w-300 p-5 rounded-xl mt-10 items-center justify-center">
+                <div className="w-full max-w-115 mx-auto flex items-center justify-center mb-5 lg:mb-0">
                     <Image src={book.image} alt={book.bookName} width={200} height={200} className="w-full h-auto"></Image>
                 </div>
                 <div>
