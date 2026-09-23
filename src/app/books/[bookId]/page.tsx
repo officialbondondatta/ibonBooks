@@ -1,3 +1,5 @@
+import ReadButton from "@/app/buttons/ReadButton";
+import WishListButton from "@/app/buttons/WishListButton";
 import Book from "@/app/types/books";
 import Image from "next/image";
 import Link from "next/link";
@@ -69,12 +71,9 @@ const page = async ({ params }: IBookSingleProps) => {
                         </p>
                     </div>
                     <div className="flex gap-5">
-                        <Link href={"/"}>
-                            <button className="btn bg-white text-slate-600">Read</button>
-                        </Link>
-                        <Link href={"/"}>
-                            <button className="btn bg-sky-400 text-white hover:bg-sky-500">Wishlist</button>
-                        </Link>
+
+                        <ReadButton book={book}></ReadButton>
+                        <WishListButton book={book}></WishListButton>
                     </div>
                 </div>
             </div>
