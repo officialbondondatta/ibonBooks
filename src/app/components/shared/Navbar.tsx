@@ -13,14 +13,17 @@ const Navbar = () => {
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <GiHamburgerMenu className="text-2xl text-sky-500"></GiHamburgerMenu>
+                            <GiHamburgerMenu className="text-2xl text-sky-500" />
                         </div>
+
                         <ul
-                            tabIndex={-1}
-                            className="menu bg-sky-200 text-slate-700 font-bold underline line-clamp-2 dropdown-content fixed inset-x-0 top-16 z-1 w-screen max-w-none shadow">
+                            tabIndex={0}
+                            className="menu menu-sm dropdown-content inset-x-0 top-full bg-sky-200 text-slate-700 underline -ml-2 font-bold z-50 mt-3 w-screen p-2 shadow"
+                        >
                             {navLinks}
                         </ul>
                     </div>
+
                     <Link href={"/"} className="btn btn-ghost text-xl">iBonBooks</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
