@@ -9,7 +9,7 @@ const bookData = async () => {
 const Books = async () => {
     const books = await bookData()
     return (
-        <section className="container mx-auto mt-10 mb-5">
+        <section className="container mx-auto mt-10 mb-5 p-5 lg:p-0">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
                 {
                     books.map((book: Book, index: number) => (
