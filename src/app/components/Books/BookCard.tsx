@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Book from "@/app/types/books";
+import Link from "next/link";
 
 interface IBooks {
     book: Book;
@@ -68,10 +69,11 @@ const BookCard = ({ book }: IBooks) => {
                         <span>{book.totalPages} pages</span>
                         <span>{book.yearOfPublishing}</span>
                     </div>
-
-                    <button className="mt-4 w-full rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-700 active:scale-[0.98]">
-                        View Details
-                    </button>
+                    <Link href={`/books/${book.bookId}`}>
+                        <button className="mt-4 w-full rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-700 active:scale-[0.98]">
+                            View Details
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
