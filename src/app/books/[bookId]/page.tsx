@@ -35,8 +35,8 @@ const page = async ({ params }: IBookSingleProps) => {
                     <h2 className="my-2 font-semibold">{book.category}</h2>
                     <hr className="w-full" />
                     <p className="my-5"><span className="font-semibold text-xl">Review: </span>{book.review}</p>
-                    <h2 className="flex gap-5">
-                        <span>Tag</span>
+                    <h2 className="flex gap-5 items-center">
+                        <span className="font-semibold">Tag:</span>
                         {book.tags.map((tag, index) => (
                             <div className="bg-slate-300 px-3 rounded-xl py-1" key={index}>
                                 <span className="text-green-600 font-semibold">
@@ -48,22 +48,22 @@ const page = async ({ params }: IBookSingleProps) => {
                     <hr className="w-full my-5" />
                     <div className="mb-5 flex flex-col gap-5">
                         <p>Number of Pages:
-                            <span className="text-xl font-semibold">
+                            <span className="text-xl font-semibold ml-2">
                                 {book.totalPages}
                             </span>
                         </p>
                         <p>Publisher:
-                            <span className="text-xl font-semibold">
+                            <span className="text-xl font-semibold ml-2">
                                 {book.publisher}
                             </span>
                         </p>
                         <p>Year of Publishing:
-                            <span className="text-xl font-semibold">
+                            <span className="text-xl font-semibold ml-2">
                                 {book.yearOfPublishing}
                             </span>
                         </p>
                         <p>Rating:
-                            <span className="text-xl font-semibold">
+                            <span className="text-xl font-semibold ml-2">
                                 {book.rating}
                             </span>
                         </p>
