@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { CiBurger } from "react-icons/ci";
-import { FaBurger } from "react-icons/fa6";
-import { GiHamburger, GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
     const navLinks = <>
         <li><Link href={"/"}>Home</Link></li>
-        <li><Link href={"/"}>Listed Books</Link></li>
+        <li><Link href={"/books"}>Listed Books</Link></li>
         <li><Link href={"/"}>Pages to Read</Link></li>
     </>
     return (

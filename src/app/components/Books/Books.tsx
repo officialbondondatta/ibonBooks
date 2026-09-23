@@ -12,7 +12,7 @@ const Books = async () => {
         <section className="container mx-auto mt-10 mb-5 p-5 lg:p-0">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
                 {
-                    books.map((book: Book, index: number) => (
+                    books.slice(0, 6).map((book: Book, index: number) => (
                         <BookCard key={index} book={book}></BookCard>
                     ))
                 }
